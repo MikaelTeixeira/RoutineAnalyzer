@@ -94,6 +94,9 @@ First, you will need a spreadsheet following a weekly structure with schedules, 
 
 <img width="1548" height="680" alt="image" src="https://github.com/user-attachments/assets/7cba263a-b60b-418a-8d1a-0fd1873ecb5f" />
 
+
+Link: https://docs.google.com/spreadsheets/d/1mqN5015GmZha_Adzi0GnmlF6ddQup_xrhyv2iXNWSh8/edit?usp=sharing
+
 The user can add or remove time slots as they wish. The only requirement for the project to function correctly is the weekday structure.
 
 Then, you must download it as a CSV file, place it in the repository folder, and set the filename in the "df_name" variable.
@@ -246,6 +249,9 @@ Primeiro será necessário ter uma planilha seguindo uma estrutura semanal com h
 
 
 <img width="1546" height="679" alt="image" src="https://github.com/user-attachments/assets/64ff34e3-2e93-4194-ada9-30b7b4908d08" />
+
+
+Link: https://docs.google.com/spreadsheets/d/1mqN5015GmZha_Adzi0GnmlF6ddQup_xrhyv2iXNWSh8/edit?usp=sharing
 
 O usuário pode adicionar ou remover horários da forma que quiser. O necessário para o bom funcionamento do projeto é a estrutura de
 dias na semana.
