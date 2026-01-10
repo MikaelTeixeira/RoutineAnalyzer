@@ -92,7 +92,7 @@ Terminal Output (Daily & Weekly Reports)
 
 First, you will need a spreadsheet following a weekly structure with schedules, as shown in the example below.
 
-<img width="1546" height="679" alt="image" src="https://github.com/user-attachments/assets/64ff34e3-2e93-4194-ada9-30b7b4908d08" />
+<img width="1548" height="680" alt="image" src="https://github.com/user-attachments/assets/7cba263a-b60b-418a-8d1a-0fd1873ecb5f" />
 
 The user can add or remove time slots as they wish. The only requirement for the project to function correctly is the weekday structure.
 
@@ -102,7 +102,7 @@ The program will display all daily relationships and the weekly summary as follo
 
 ### Daily (Monday)
 
-TOTAL ACTIVITIES IN THE DAY
+TOTAL ACTIVITIES PER DAY
 
 MONDAY
 
@@ -126,23 +126,23 @@ Leisure = 1 hours (4.17%)
 
 WEEKLY ACTIVITY REPORT
 
-'Sleep' represents 33.33% of the week's activities.
+'Sleep' represents 33.33% of total week activities.
 
-'Work' represents 23.81% of the week's activities.
+'Work' represents 25.60% of total week activities.
 
-'Study' represents 6.55% of the week's activities.
+'Study' represents 4.76% of total week activities.
 
-'Gym' represents 4.76% of the week's activities.
+'Gym' represents 4.76% of total week activities.
 
-'Lunch' represents 4.17% of the week's activities.
+'Lunch' represents 4.17% of total week activities.
 
-'Breakfast' represents 4.17% of the week's activities.
+'Breakfast' represents 4.17% of total week activities.
 
-'Dinner' represents 4.17% of the week's activities.
+'Dinner' represents 4.17% of total week activities.
 
-'Leisure' represents 17.86% of the week's activities.
+'Leisure' represents 17.86% of total week activities.
 
-'Church' represents 1.19% of the week's activities.
+'Church' represents 1.19% of total week activities.
 
 ```bash
 git clone [https://github.com/YOUR_USERNAME/RoutineAnalyzer](https://github.com/YOUR_USERNAME/RoutineAnalyzer)
