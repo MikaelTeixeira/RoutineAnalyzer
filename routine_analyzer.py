@@ -2,38 +2,75 @@ import pandas as pd
 
 def show_activity_percentage(dataframe, week_days: list):
     
-    print(f"\nTOTAL ACTIVITIES PER DAY")
-
-    total_week_activities = 0
-    week_count = {}
-    df = dataframe
-
-    for day in week_days:
-        total_activities = df[f"{day}"].count()
-        total_week_activities += total_activities
-
-        count = df[f"{day}"].value_counts()
-
-        print(f"\n{day.upper()}")
-
-        for activity, activity_amount in count.items():
+    if (week_days.__contains__("MONDAY")):
             
-            if activity in week_count:
-                week_count[activity] += activity_amount
-            else:
-                week_count[activity] = activity_amount
+        print(f"\nTOTAL ACTIVITIES PER DAY")
 
-            percent = (activity_amount / total_activities) * 100
+        total_week_activities = 0
+        week_count = {}
+        df = dataframe
 
-            print(f"{activity.title()} = {activity_amount} hours ({percent:.2f}%)")
+        for day in week_days:
+            total_activities = df[f"{day}"].count()
+            total_week_activities += total_activities
 
-    print(f"\n{'=' * 32}")
-    print(f"WEEKLY ACTIVITY REPORT")
-    print(f"{'=' * 32}")
+            count = df[f"{day}"].value_counts()
 
-    for activity_name, activity_count in week_count.items():
-        percent = (activity_count / total_week_activities) * 100
-        print(f"'{activity_name.title()}' represents {percent:.2f}% of total week activities.")
+            print(f"\n{day.upper()}")
+
+            for activity, activity_amount in count.items():
+                
+                if activity in week_count:
+                    week_count[activity] += activity_amount
+                else:
+                    week_count[activity] = activity_amount
+
+                percent = (activity_amount / total_activities) * 100
+
+                print(f"{activity.title()} = {activity_amount} hours ({percent:.2f}%)")
+
+        print(f"\n{'=' * 32}")
+        print(f"WEEKLY ACTIVITY REPORT")
+        print(f"{'=' * 32}")
+
+        for activity_name, activity_count in week_count.items():
+            percent = (activity_count / total_week_activities) * 100
+            print(f"'{activity_name.title()}' represents {percent:.2f}% of total week activities.")
+
+    elif (week_days.__contains__("SEGUNDA")):
+        
+        print(f"\TOTAL DE ATIVIDADES DIÁRIAS")
+
+        total_week_activities = 0
+        week_count = {}
+        df = dataframe
+
+        for day in week_days:
+            total_activities = df[f"{day}"].count()
+            total_week_activities += total_activities
+
+            count = df[f"{day}"].value_counts()
+
+            print(f"\n{day.upper()}")
+
+            for activity, activity_amount in count.items():
+                
+                if activity in week_count:
+                    week_count[activity] += activity_amount
+                else:
+                    week_count[activity] = activity_amount
+
+                percent = (activity_amount / total_activities) * 100
+
+                print(f"{activity.title()} = {activity_amount} horas ({percent:.2f}%)")
+
+        print(f"\n{'=' * 32}")
+        print(f"RELATÓRIO DE ATIVIDADE SEMANAL")
+        print(f"{'=' * 32}")
+
+        for activity_name, activity_count in week_count.items():
+            percent = (activity_count / total_week_activities) * 100
+            print(f"'{activity_name.title()}' reresenta {percent:.2f}% das suas atividades semanais.")
 
 df_name = "RoutineAnalyzer Week days template.csv"
 
@@ -53,6 +90,5 @@ NOTE: I'm just adding a description because I'm learning how to use Lambda and s
 ENGLISH_WEEK_DAYS = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
 
 PORTUGUESE_WEEK_DAYS = ["SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SÁBADO", "DOMINGO"]
-
 
 show_activity_percentage(df, ENGLISH_WEEK_DAYS)
